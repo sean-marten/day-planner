@@ -28,7 +28,7 @@ $(document).ready(function () {
 
       const amPm = moment(`2000-01-01T09:00:00+0${i}:00`).format("A");
       const timeDiff =
-        (amPm ? dayHours[i] : dayHours[i] + 12) - moment().format("HH");
+        (amPm === "AM" ? dayHours[i] : dayHours[i] + 12) - moment().format("HH");
       const bcgColor =
         timeDiff < 0
           ? "lightgray"

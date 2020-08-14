@@ -16,6 +16,6 @@ This repository has some unique features, which are outlined below:
 
 [Day Planner Webpage](https://sean-marten.github.io/day-planner/)
 
-## Dynacmic Image of Webpages
+## Dynamic Image of Webpage
 
-![screenshot]()
+![screenshot](./assets/pictures/day-planner.gif)
