@@ -19,6 +19,7 @@ $(document).ready(function () {
   // Method to dynamically add schedule rows
   function renderPage() {
     for (let i = 0; i < dayHours.length; i++) {
+        const $title = $("h1");
       const $row = $("<div>");
       const $task = $("<input>");
       const $time = $("<div>");
@@ -40,6 +41,8 @@ $(document).ready(function () {
           $task.val(task.task);
         }
       });
+
+      $title.text(`${moment().format('dddd')}'s Work Schedule`)
 
       $row.addClass("row align-items-center");
 
