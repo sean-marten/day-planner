@@ -3,27 +3,19 @@ This repository contains a work day planner. This planner allows you to enter it
 
 ## Outline of the Day Planner
 This repository has some unique features, which are outlined below:
-1. A 10 question quiz that tests a user's in-depth knowledge about Javascript. This quiz lasts 120 seconds. Questions have 4 multiple choice answers and only one correct answer.
-2. User's can easily press the start button at the top of the page. Once this occurs they are prompted through each question one at a time.
-3. Once the question is answered, if it is correct, it will highlight it green, if wrong it will highlight it red. The user can then click the next question button to proceed to the next question.
-4. If a question is answered incorrectly, 5 seconds is deducted from the time. 
-5. If the user answers all questions or the time runs out, a page shows how many questions were answered correctly. Users can also input their name and submit it to the highscores page. 
-6. After submitting the high score or by clicking "View highscores" in the top left corner, the user is taken to a high score page, where they can see how they stack up to others.
+1. The current day of the week is displayed at the top of the page.
+2. There are timeblocks (per hour) from 9AM -5PM. 
+3. Each timeblock will dynamically change color depending on the time of day. If the hour has passed it will be gray, if it is currently that hour it will be red, if the hour is in the future it will be green.
+4. Each timeblock has an input box that allows you to enter a task for that period.
+5. If you wish to save that task, you can press the save button next to the task.
+6. Upon refreshing or revisiting the page at a later time, these tasks will still be there.
 
 ## Github links
 
-[Homework-4 Github Repository](https://github.com/sean-marten/software-quiz)
+[Day Planner Github Repository](https://github.com/sean-marten/day-planner)
 
-[Homework-4 Webpage](https://sean-marten.github.io/software-quiz/)
+[Day Planner Webpage](https://sean-marten.github.io/day-planner/)
 
-## Images of Webpages
+## Dynacmic Image of Webpages
 
-The web page consists of a simple navbar for the highscore navigation. This web page changes dynamically between the start, questions, finish and high score pages. The use of this page is shown in a gif below.
-
-### Webpage at start:
-
-![screenshot](./assets/pictures/page-at-start.png)
-
-### Webpage question correct:
-
-![screenshot](./assets/pictures/question-correct.png)
+![screenshot]()
