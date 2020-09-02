@@ -19,16 +19,21 @@ $(document).ready(function () {
   // Method to dynamically add schedule rows
   function renderPage() {
     for (let i = 0; i < dayHours.length; i++) {
-        const $title = $("h1");
+      const $title = $("h1");
       const $row = $("<div>");
       const $task = $("<input>");
       const $time = $("<div>");
       const $updateContent = $("<button>");
       const $icon = $("<i>");
 
-      const amPm = moment(`2000-01-01T09:00:00+0${i}:00`).format("A");
+      const date = moment("2000-01-01 09:00:00").add(i, "hours");
+      const amPm = moment(date).format("A");
       const timeDiff =
-        (amPm === "AM" ? dayHours[i] : dayHours[i] + 12) - moment().format("HH");
+        (amPm === "AM"
+          ? dayHours[i]
+          : dayHours[i] === 12
+          ? dayHours[i]
+          : dayHours[i] + 12) - moment().format("HH");
       const bcgColor =
         timeDiff < 0
           ? "lightgray"
@@ -42,7 +47,7 @@ $(document).ready(function () {
         }
       });
 
-      $title.text(`${moment().format('dddd')}'s Work Schedule`)
+      $title.text(`${moment().format("dddd")}'s Work Schedule`);
 
       $row.addClass("row align-items-center");
 
